@@ -9,10 +9,34 @@
         body{
             background-color:lightskyblue;
             color: magenta;
-            font-family: ;
+            font-family: 'Courier New', Courier, monospace;
         }
+
         h2{
             color:yellow;
+            background-color: cadetblue;
+            width: 50%;
+            border: 2px solid red;
+            margin-left: 100px;
+        }
+        h1{
+            text-align: center;
+
+        }
+        table, th, td{
+            border: 2px solid white;
+            border-collapse: collapse;
+        }
+        table{
+            width: 50%;
+        }
+        th,td{
+            line-height: 30px;
+            padding: 5px;
+            color: brown;
+        }
+        a{
+            text-decoration: none;
         }
     </style>
 </head>
@@ -20,6 +44,7 @@
     <!-- comment = ctr + ? -->
     <h1>Dang Thi Anh's Portfolio</h1>
     <img src="image/anhh.jpg" alt="anh dai dien" height="250px">
+    
     <h2>Intro video:</h2>
     <video controls autoplay muted height="200px" src="video/snsd.mp4"></video>
     <br>
@@ -62,7 +87,28 @@
     <h2>Interest</h2>
     <h2>Favorite songs</h2>
     <h2>Contact</h2>
-    <a href="https://learn.codegym.vn/members/anhdang8420/">View my profile</a>
+    <table>
+        <tr>
+            <th>No.</th>
+            <th>Channel</th>
+            <th>Link</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Trang Learn</td>
+            <td><a href="#">https://learn.codegym.vn/members/anhdang8420/</a></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Gmail</td>
+            <td>anhdang8420@gmail.com</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Zalo</td>
+            <td>0343586761</td>
+        </tr>
+    </table>
 
 </body>
 </html>
