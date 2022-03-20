@@ -1,0 +1,66 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 80%;
+    height: 90%;
+    margin: auto;
+    display: grid;
+    gap: 10px 10px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 10% 10% 10% 30% 30% 10%;
+    grid-template-areas:
+    "header header header header"
+    "navbar navbar navbar navbar"
+    "tab1 tab2 tab3 tab4"
+    "content content content banner1"
+    "content content content banner2"
+    "footer footer footer footer";
+}
+.container div{
+    text-align: center;
+}
+.item-1{
+    background-color: blueviolet;
+    grid-area: header;
+}
+.item-2{
+    background-color: aqua;
+    grid-area: navbar;
+}
+.item-3{
+    background-color: blanchedalmond;
+    grid-area: footer;
+}
+.item-4{
+    background-color: brown;
+    grid-area: tab1;
+}
+.item-5{
+    background-color: cornflowerblue;
+    grid-area: tab2;
+}
+.item-6{
+    background-color: cadetblue;
+    grid-area: tab3;
+}
+.item-7{
+    background-color: darkgreen;
+    grid-area: tab4;
+}
+.item-8{
+    background-color: darkblue;
+    grid-area: banner1;
+}
+.item-9{
+    background-color: darkred;
+    grid-area: banner2;
+}
+.item-10{
+    background-color: darkgoldenrod;
+    grid-area: content;
+}
