@@ -1,0 +1,299 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    font-size: 14px;
+}
+
+.navbar i {
+    font-size: larger;
+}
+
+.grid-container {
+    width: 85%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: grid;
+    gap: 50px 50px;
+    grid-template-areas:
+        "item-1 item-2 item-3"
+        "item-4 item-5 item-6"
+        "item-7 item-8 item-9";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.item-1 {
+    grid-area: item-1;
+    height: 100%;
+}
+
+.item-2 {
+    grid-area: item-2;
+    height: 100%;
+
+}
+
+.item-3 {
+    grid-area: item-3;
+    height: 100%;
+
+}
+
+.item-4 {
+    grid-area: item-4;
+    height: 100%;
+}
+
+.item-5 {
+    grid-area: item-5;
+    height: 100%;
+
+}
+
+.item-6 {
+    grid-area: item-6;
+    height: 100%;
+
+}
+
+.grid-container>div {
+    /* border: 1px solid black; */
+}
+
+.product-name {
+    height: 15%;
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    color: chocolate;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product img {
+    width: 100%;
+    height: 40%;
+}
+
+.description-product {
+    width: 99%;
+    height: 35%;
+    font-size: 18px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+small {
+    font-size: 11px;
+}
+
+.grid-container button {
+    width: 30%;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+
+    border: 0;
+    border-radius: 10px;
+    font-weight: 450;
+    color: white;
+    background-color: chocolate;
+
+}
+
+/* Hotline */
+.hotline {
+    width: 85%;
+    height: 30%;
+    margin: auto;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: chocolate;
+}
+
+.hotline p {
+    font-style: italic;
+    color: black;
+}
+.hotline h1{
+    font-family: 'Dancing Script';
+    margin-bottom: 10px;
+}
+
+/* Special product */
+.special-product-container {
+    width: 85%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-areas:
+        "p-1 p-2"
+        "p-3 p-4";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    box-shadow: 10px 10px 5px 5px #f5f7e7;
+
+
+}
+
+.special-product {
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    color: chocolate;
+    font-family: 'Dancing Script'; font-weight: bold; font-size: 26;
+}
+
+.info-container {
+    border: 1px solid orange;
+    border-collapse: collapse;
+    border-radius: 10px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.info-container a {
+    height: 90%;
+    width: 40%;
+    float: right;
+    margin: 10px 10px;
+}
+
+.info-container img {
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+.info-container img:hover{
+    width: 95%;
+    transition: width 3s;
+}
+.right-spc {
+    width: 50%;
+    float: right;
+
+}
+.spc-name{
+    font-size: 20px;
+    color: brown;
+}
+.spc-price{
+    color: red;
+}
+
+.info-container button {
+    border: 0;
+    padding: 10px;
+    margin-right: 10px;
+    background-color: rgb(250, 243, 235);
+    border-radius: 15px;
+    color: blueviolet;
+    font-weight: bolder;
+    font-size: 15px;
+    opacity: 0.7;
+}
+.info-container button:hover{
+    opacity: 1;
+}
+
+/* Footer */
+footer {
+    height: 25%;
+    background-color: lightblue;
+}
+.copy-right {
+    height: 100%;
+    background-color: rgb(247, 239, 229);
+    display: flex;
+    margin-top: 200px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 100;
+}
+
+
+
+
+@media screen and (max-width: 1000px) {
+    .navbar {
+        width: 100%;
+        margin: auto;
+    }
+
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        /* grid-template-areas: "item-1"
+        "item-2"
+        "item-3"; */
+        width: 90%;
+        margin: auto;
+        margin-bottom: 200px;
+    }
+
+    .product-info {
+        width: 100%;
+        padding: 20px 10px;
+    }
+
+    .description-product {
+        width: 99%;
+        height: 35%;
+        font-size: 16px;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    .product {
+        width: 100%;
+        height: 30%;
+    }
+
+    .grid-container img {
+        width: 100%;
+    }
+    
+    .grid-container button {
+        width: 30%;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .info-container {
+        width: 100%;
+        border: 1px solid orange;
+        border-collapse: collapse;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info-container a {
+        width: 100%;
+    }
+
+    .right-spc {
+        width: 100%;
+    }
+}
+
